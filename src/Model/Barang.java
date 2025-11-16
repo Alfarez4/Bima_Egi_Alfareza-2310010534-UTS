@@ -9,13 +9,17 @@ public class Barang {
     private String nama;
     private int jumlah;
     private double harga;
+    private String kategori;
+    private String waktuInput;
 
     // Konstruktor untuk menginisialisasi data barang
-    public Barang(String kode, String nama, int jumlah, double harga) {
+    public Barang(String kode, String nama, int jumlah, double harga, String kategori, String waktuInput) {
         this.kode = kode;
         this.nama = nama;
         this.jumlah = jumlah;
         this.harga = harga;
+        this.kategori = kategori;
+        this.waktuInput = waktuInput;
     }
 
     // Getter dan Setter untuk mengakses dan mengubah nilai atribut
@@ -27,4 +31,7 @@ public class Barang {
     public void setNama(String nama) { this.nama = nama; }
     public void setJumlah(int jumlah) { this.jumlah = jumlah; }
     public void setHarga(double harga) { this.harga = harga; }
+    
+    public String getKategori() { return kategori; }
+    public String getWaktuInput() { return waktuInput; }
 }
